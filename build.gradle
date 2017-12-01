@@ -1,0 +1,18 @@
+group 'com.esther'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+// 新增
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+// 新增
+mainClassName='com.esther.test.HelloGradleTest'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
